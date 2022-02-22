@@ -6,4 +6,6 @@ class LectureSerializer(serializers.ModelSerializer):
     class Meta:
         model = Lecture
         fields = ('id', 'title', 'description', 'date',
-                  'slides_url', 'created_at', 'updated_at')
+                  'slides_url', 'created_at', 'updated_at',
+                  'duration', 'is_required'
+                  )

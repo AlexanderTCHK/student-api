@@ -10,6 +10,7 @@ class Waitlist(Timestamps, models.Model):
         max_length=255,
         unique=True,
     )
+    level = models.IntegerField(verbose_name="Class Level", default=1)
     notes = models.TextField()
 
     def __str__(self) -> str:
